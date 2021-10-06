@@ -4,10 +4,10 @@
 
 .addProductForm {
   margin-top: 10px;
+  display: flex;
 }
 
 .addProductItem {
-  width: 250px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -20,19 +20,43 @@
 }
 
 .addProductItem > input {
+  border: none;
   padding: 10px;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 3px;
 }
 
 .addProductItem > select {
   padding: 10px;
 }
 
+.rights {
+  flex: 1;
+  margin: 20px;
+}
+
+.lefts {
+  flex: 1;
+  margin: 20px;
+}
+
 .addProductButton {
   margin-top: 10px;
-  padding: 7px 10px;
+  padding: 7px 25px;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px;
   background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.back {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(223, 0, 0);
   color: white;
   font-weight: 600;
   cursor: pointer;
