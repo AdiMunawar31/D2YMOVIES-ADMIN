@@ -1,15 +1,13 @@
-import './productList.css';
 import { DataGrid } from '@material-ui/data-grid';
 import { DeleteOutline } from '@material-ui/icons';
-import { productRows } from '../../dummyData';
+import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useState, useContext, useEffect } from 'react';
-import { getMovies } from '../../context/movieContext/ApiCall';
+import { deleteMovie, getMovies } from '../../context/movieContext/ApiCall';
 import { MovieContext } from '../../context/movieContext/MovieContext';
-import { deleteMovie } from '../../context/movieContext/ApiCall';
+import './productList.css';
 
 export default function ProductList() {
-  const [data, setData] = useState(productRows);
+  // const [data, setData] = useState(productRows);
   const { movies, dispatch } = useContext(MovieContext);
 
   useEffect(() => {
